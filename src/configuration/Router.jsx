@@ -8,6 +8,7 @@ import Salud from '../components/views/Salud';
 import Nutricion from "../components/views/Nutricion";
 import Autocuidado from "../components/views/Autocuidado";
 import FormView from '../components/views/FormView';
+import Article from '../components/molecules/Article';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/nutricion' element={<Nutricion/>} />
           <Route path='/autocuidado' element={<Autocuidado/>} />
           <Route path='/formview' element={<FormView/>}/>
+          <Route path='/articles/:id' element={<Article/>}/>
         </Routes>
      
     </BrowserRouter>
