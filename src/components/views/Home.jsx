@@ -16,11 +16,20 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="container flex flex-wrap">
+      <div className='flex flex-col items-center mx-auto py-8'>
+      <h1 className='font-bold text-5xl h1 pb-4'>
+        Bienestar a mi manera
+      </h1>
+      <h2 className='text-3xl'>
+        vive sano,vive feliz
+      </h2>
+      </div>
+      <div className="container mx-auto flex flex-wrap">
         {articles.map((article) => (
           <div key={article.id} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-2">
             <Card
-            imageValue={article.image_url}
+            id={article.id}
+            imageValue={article.image}
               titleValue={article.title}
               bodyValue={article.body}
             />
