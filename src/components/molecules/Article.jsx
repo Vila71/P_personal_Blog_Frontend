@@ -24,16 +24,16 @@ const Article = () => {
     <Navbar />
 </div>
 <div>
-    <h1>{article.title}</h1>
+    <h1 className='mb-6 ml-20 mt-12 text-2xl font-bold tracking-tight text-gray-900 dark:text-white h-12 '>{article.title}</h1>
 </div>
 <div>
-    <img src={article.image} alt="" />
+    <img className='rounded-t-lg w-10/12 h-40  mx-20 ' src={article.image} alt="" />
 </div>
 <div>
-    <p>{article.body}</p>
+    <p className='mb-2 mx-20 mt-8 w-10/12 font-normal text-gray-700 dark:text-gray-400 h-32'>{article.body}</p>
 </div>
 <div>
-    <Footer />
+    <Footer/>
 </div>
 </>
 
