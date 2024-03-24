@@ -4,17 +4,18 @@ export default {
     "./src/**/*.{html,js}",
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
     extend: {
       colors: {
-        'blueLight': '#EDF0FF',
+        'beis': '#FFEED9',
         'blue': '#0025CE',
         'green': '#00BF63',
       }
     },
   },
   plugins: [
-    require("flowbite")
+    require('flowbite/plugin')
   ],
 }
